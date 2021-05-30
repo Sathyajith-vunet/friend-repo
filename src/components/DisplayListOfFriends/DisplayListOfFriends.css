@@ -1,0 +1,42 @@
+.friend-row {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    border         : 1px solid #d3d3d3;
+    padding        : 0.3rem 1rem;
+}
+
+.actions {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.text {
+    font-size  : 0.7rem;
+    padding-top: 0.4rem;
+}
+
+.star-icon {
+    padding        : 0.5rem;
+    border         : 1px solid #d3d3d3;
+    cursor         : pointer;
+    height         : 1vh;
+    width          : 1.3vw;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-right   : 0.5rem;
+    color          : #8c8c8c;
+}
+
+.delete-icon {
+    padding        : 0.5rem;
+    border         : 1px solid #d3d3d3;
+    cursor         : pointer;
+    height         : 1vh;
+    width          : 1.3vw;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    color          : #8c8c8c;
+}

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Pagination from "react-js-pagination";
 import DeleteConfirmModal from "./components/DeleteConfirmModal/DeleteConfirmModal";
+import DisplayListOfFriends from "./components/DisplayListOfFriends/DisplayListOfFriends";
 
 function App() {
   const [friendsList, setFriendsList] = useState([]);
@@ -15,53 +16,6 @@ function App() {
   const handleDisplayDeleteModal = (name) => {
     setDisplayDeleteModal(true);
     setToDeleteFriend(name);
-  };
-
-  const displayListOfFriends = () => {
-    const indexOfLastEvent = activePage * eventsPerPage;
-    const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
-    const DisplayFriendsList =
-      displayFriendsList &&
-      displayFriendsList.slice(indexOfFirstEvent, indexOfLastEvent);
-    if (DisplayFriendsList.length > 0) {
-      return (
-        DisplayFriendsList &&
-        DisplayFriendsList.map((friend) => {
-          return (
-            <div className="friend-row">
-              <div>
-                {friend.name}
-                <div className="text">is your friend</div>
-              </div>
-              <div className="actions">
-                <div
-                  className="star-icon"
-                  onClick={() => handleFavorite(friend.name)}
-                >
-                  {friend.favorite ? (
-                    <span className="fa fa-star"></span>
-                  ) : (
-                    <span className="fa fa-star-o"></span>
-                  )}
-                </div>
-                <div
-                  className="delete-icon"
-                  onClick={() => handleDisplayDeleteModal(friend.name)}
-                >
-                  <span className="fa fa-trash"></span>
-                </div>
-              </div>
-            </div>
-          );
-        })
-      );
-    }else if(friendName !== ''){
-      return(
-      <div className="friend-row">
-        Yay!! New friend. Hit enter to add as friend
-      </div>
-      );
-    }
   };
 
   const handleFavorite = (name) => {
@@ -159,7 +113,16 @@ function App() {
               onKeyPress={handleInputFriendName}
             />
           </div>
-          <div className="list-of-friends">{displayListOfFriends()}</div>
+          <div className="list-of-friends">
+            <DisplayListOfFriends
+              activePage={activePage}
+              eventsPerPage={eventsPerPage}
+              displayFriendsList={displayFriendsList}
+              handleFavorite={handleFavorite}
+              handleDisplayDeleteModal={handleDisplayDeleteModal}
+              friendName={friendName}
+            />
+          </div>
           <Pagination
             className="pagination-component"
             activePage={activePage}
