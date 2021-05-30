@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/friend-repo/static/css/main.6e336395.chunk.css",
+    "main.js": "/friend-repo/static/js/main.ea7f91cd.chunk.js",
+    "main.js.map": "/friend-repo/static/js/main.ea7f91cd.chunk.js.map",
+    "runtime-main.js": "/friend-repo/static/js/runtime-main.de6c88dc.js",
+    "runtime-main.js.map": "/friend-repo/static/js/runtime-main.de6c88dc.js.map",
+    "static/css/2.655a0e81.chunk.css": "/friend-repo/static/css/2.655a0e81.chunk.css",
+    "static/js/2.20339c1b.chunk.js": "/friend-repo/static/js/2.20339c1b.chunk.js",
+    "static/js/2.20339c1b.chunk.js.map": "/friend-repo/static/js/2.20339c1b.chunk.js.map",
+    "static/js/3.832195bb.chunk.js": "/friend-repo/static/js/3.832195bb.chunk.js",
+    "static/js/3.832195bb.chunk.js.map": "/friend-repo/static/js/3.832195bb.chunk.js.map",
+    "index.html": "/friend-repo/index.html",
+    "static/css/2.655a0e81.chunk.css.map": "/friend-repo/static/css/2.655a0e81.chunk.css.map",
+    "static/css/main.6e336395.chunk.css.map": "/friend-repo/static/css/main.6e336395.chunk.css.map",
+    "static/js/2.20339c1b.chunk.js.LICENSE.txt": "/friend-repo/static/js/2.20339c1b.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/friend-repo/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de6c88dc.js",
+    "static/css/2.655a0e81.chunk.css",
+    "static/js/2.20339c1b.chunk.js",
+    "static/css/main.6e336395.chunk.css",
+    "static/js/main.ea7f91cd.chunk.js"
+  ]
+}
